@@ -20,6 +20,10 @@
             android:name=".Activity2"
             android:label="@string/title_activity_2" >
         </activity>
+        <activity
+            android:name=".PaletteTestActivity"
+            android:label="@string/title_activity_palette_test" >
+        </activity>
     </application>
 
 </manifest>

@@ -25,6 +25,14 @@ public class MyFragment : Fragment() {
             }
         })
 
+        var buttonPalete: Button = root.findViewById(R.id.my_fragment_palette_test_button) as Button
+        buttonPalete.setOnClickListener(object : View.OnClickListener {
+            public override fun onClick(view: View) {
+                val intent: Intent = Intent(getActivity().getApplicationContext(), javaClass<PaletteTestActivity>());
+                startActivityForResult(intent, 123)
+            }
+        })
+
         return root
     }
 
